@@ -1,0 +1,15 @@
+
+<div class="grid-sizer"></div>
+
+<div class="preview-inner-wrapper">
+	<div class="hover-overlay"></div>
+	<img class="thumbnail" src={{data.thumbnail}}>
+	<div class="text-wrapper">
+		<h3 class="preview-title">{{data.title}}</h3>
+		<p class="preview-description">
+		{{#each data.type as |type index|}}
+			&mdash; {{type}}
+		{{/each}}
+		</p>
+	</div>
+</div>
