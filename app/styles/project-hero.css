@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Lora|Montserrat');
+
+ 
+.project-hero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 1);
+	opacity: 0;
+}
+.project-hero.show {
+	opacity: 1;
+}
+
+.project-hero .hero-top {
+	top: 0;
+	width: 90vw;
+}
+
+.project-hero .hero-left {
+	width: 53vw;
+	display: inline-block;
+	float: left;
+}
+
+.project-hero .hero-left img {
+	width: 98%;
+}
+
+.project-hero .hero-right {
+	float: left;
+	display: inline-block;
+	width: 30vw;
+	padding-left: 1%; 
+}
+
+.project-hero .hero-data {
+	font-family: "brandon-grotesque", sans-serif;
+	font-weight: 200;
+	text-align: left;
+	margin-top: 20%; 
+}
+
+.project-hero .hero-data .line {
+	width: 50px;
+	height: 5px;
+	background-color: #000000;
+	margin-top: 5%;
+}
+
+.project-hero .hero-data ul {
+	padding: 0;
+	margin-top: 5%;
+}
+
+.project-hero .hero-data li {
+	list-style: none;
+	white-space: nowrap;
+	text-align: left;
+	line-height: 150%;
+}
+
+.project-hero .hero-image {
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.project-hero .hero-body {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.project-hero .description,
+ .project-hero .description2 {
+	width: 60vw;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "brandon-grotesque", sans-serif;
+	font-size: 18px;
+	line-height: 140%;
+	margin-bottom: 5%;
+	margin-top: 5%; 
+	text-align: left;
+}
+
+.project-hero .features-section {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.project-hero .features-section .feature-text {
+	width: 39.5%;
+	display: inline-block;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 36px;
+	line-height: 160%;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+.project-hero .features-section .feature-text li {
+	list-style: none;
+	white-space: nowrap;
+	position: relative;
+}
+
+.project-hero .features-section img {
+	width: 60%;
+	display: inline-block;
+	opacity: 1;
+}
+
+.project-hero .hero-gallery {
+	width: 100%;
+	display: block;
+	margin-top: 2%;
+}
+
+.project-hero .hero-gallery .prototype {
+	width: 100%;
+}
+
+/*.project-hero .hero-gallery .grid {
+	margin: 0 auto;
+}*/
+
+/*.project-hero .grid-sizer {
+	width: 100%;
+}*/
+
+.not-masonry-grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.col {
+  display: inline-block;
+  width: 49%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: top;
+}
+
+.project-hero .hero-gallery .gallery-image {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}
+
+.project-hero .hero-gallery .gallery-image img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 5%;
+}
+
+/*.project-hero .hero-gallery .img-container:nth-child(2n) img {
+	width: 60%;
+	float: right;
+	margin-right: 5%;
+}
+
+.project-hero .hero-gallery .img-container:nth-child(3n) img {
+	width: 50%;
+	float: left;
+	margin-left: 5%;
+}*/
+
+/*.project-hero .hero-gallery .gallery-image p {
+	position: absolute;
+	font-family: 'brandon-grotesque', sans-serif;
+	text-align: center;
+	left: 50%;
+	     -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+         transform: translateX(-50%);
+}*/
+
+/*.project-hero .hero-gallery .img-container:nth-child(2n) p {
+	margin-left: 10%;
+	margin-top: 10%;
+	float: left;
+}
+
+.project-hero .hero-gallery .img-container:nth-child(3n) p {
+ 	margin-right: 15%;
+	margin-top: 10%;
+ 	float: right;
+ }*/
+
+

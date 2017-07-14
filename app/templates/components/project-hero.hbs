@@ -1,0 +1,68 @@
+
+<div class="hero-top">
+	<div class="hero-left" data-aos="fade-up">
+		<img class='hero-img' src="{{data.heroImage}}">
+	</div>
+
+	<div class="hero-right">
+		<div class="hero-data">
+			<h1 class="scroll-reveal">{{data.title}}</h1>
+			<div class="line scroll-reveal"></div>
+			<ul class="scroll-reveal">
+				{{#each data.type as |type index|}}
+					<li>{{type}}</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div style="clear: both;"></div>
+
+<div class="hero-body">
+	<div class="description">
+		<p class="scroll-reveal">{{data.description}}</p>
+		{{#with data.description2}}
+			<p class="scroll-reveal">{{data.description2}}</p>
+		{{/with}}
+	</div>
+
+	<div class="features-section">
+		<ul class="feature-text">
+			{{#each data.featureText as |feature index|}}
+				<li class="scroll-reveal">{{feature}}</li>
+			{{/each}}
+		</ul>
+		<img class="feature-img scroll-reveal" src={{data.firstImage}}>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div class="hero-gallery">
+		{{#with data.prototype}}
+			<iframe class="prototype" src="{{data.prototype}}" height="650" frameborder="0" scrolling="no"></iframe>
+		{{/with}}
+		{{#with data.projectImgs}}
+			<div class="not-masonry-grid">
+
+				<div id="col-1" class="col">
+					{{#each evenImages as |image index|}}
+						<div class="gallery-image">
+							<img src={{image.image}}>
+							{{!-- <p>{{image.text}}</p> --}}
+						</div>
+					{{/each}}
+				</div>
+
+				<div id="col-2" class="col">
+					{{#each oddImages as |image index|}}
+						<div class="gallery-image">
+							<img src={{image.image}}>
+							{{!-- <p>{{image.text}}</p> --}}
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		{{/with}}
+	</div>
+</div>
