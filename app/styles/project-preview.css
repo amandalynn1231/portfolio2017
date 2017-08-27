@@ -1,14 +1,20 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 .project-preview {
-	width: 50%;
+	width: 95%;
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease;
        -moz-transition: opacity 0.3s ease;
          -o-transition: opacity 0.3s ease;
     		transition: opacity 0.3s ease;
-
     cursor: pointer;
+    margin-bottom: 5%;
 }
+
+/*.grid-sizer {
+	width: 90%;
+}*/
 
 .project-list.view-single .project-preview .preview-inner-wrapper {
 	opacity: 0;
@@ -19,10 +25,14 @@
 }
 
 .preview-inner-wrapper {
+	position: relative;
 	transition: transform 0.3s ease;    
 	transform-origin: center;
 	box-shadow: none;
-	margin: 2%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 10; 
 }
 
 .project-preview:hover .preview-inner-wrapper {
@@ -33,18 +43,25 @@
      box-shadow: 1px 1px 10px #E2E2E2;  
 }
 
-.hover-overlay {
+.project-list .hover-overlay {
 	position: absolute;
-    z-index: 1;
+	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #0E9F4F; 
+	/*background-color: #0E9F4F; */
 	opacity: 0;
     -webkit-transition: opacity 0.3s ease;
        -moz-transition: opacity 0.3s ease;
          -o-transition: opacity 0.3s ease;
     		transition: opacity 0.3s ease;
     box-shadow: none;
+    margin: 0 auto;
+    left: 50%;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	 z-index: 1;
 }
 
 .project-preview:hover .hover-overlay {
@@ -64,26 +81,27 @@
 	   -moz-transform: translate(-50%, -50%);
 	     -o-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
-
 	color: #ffffff;
 	text-align: center;
 }
 
 .text-wrapper .preview-title {
-	font-family: "Nunito Sans", sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	font-weight: 900;
 	font-style: italic;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	opacity: 0;
+	line-height: 120%;
 }	
 
 .text-wrapper .preview-description {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'brandon-grotesque', sans-serif;
 	font-weight: 400;
 	opacity: 0;
 	padding-top: 3%;
 	line-height: 120%;
+	font-size: 18px;
 }
 
 .project-list .project-preview:hover .text-wrapper .preview-title,
@@ -96,6 +114,11 @@
 	display: block;
 	top: 0;
 	width: 100%;
+	height: 100%;
 	box-shadow: none;
 	opacity: 0.9;
 }
+
+/*.project-preview:hover .thumbnail {
+	filter: hue-rotate(90deg);
+}*/

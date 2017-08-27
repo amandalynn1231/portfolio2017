@@ -1,4 +1,9 @@
 
+{{#if viewAll}}
+	{{project-list data=rawProjects action='showAll'}}
+{{/if}}
+<div class="show-all" {{action 'showAll'}}>&mdash; back</div>
+
 <div class="hero-top">
 	<div class="hero-left" data-aos="fade-up">
 		<img class='hero-img' src="{{data.heroImage}}">
@@ -8,11 +13,28 @@
 		<div class="hero-data">
 			<h1 class="scroll-reveal">{{data.title}}</h1>
 			<div class="line scroll-reveal"></div>
-			<ul class="scroll-reveal">
-				{{#each data.type as |type index|}}
-					<li>{{type}}</li>
+			<div class="info-text">
+				<p>{{data.year}}</p>
+				{{!-- <ul>
+					{{#each data.year as |year index|}}
+						<li>{{year}}</li>
+					{{/each}}
+				</ul> --}}
+				<ul>
+					{{#each data.type as |type index|}}
+						<li>{{type}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{#with data.projectLink}}
+				{{#each data.projectLink as |link index|}}
+					<a href="{{link.linkUrl}}" class="project-link" target="_blank">
+						<div class="link-text">
+						{{link.linkText}}
+						</div>
+					</a>
 				{{/each}}
-			</ul>
+			{{/with}}
 		</div>
 	</div>
 </div>
@@ -21,9 +43,11 @@
 
 <div class="hero-body">
 	<div class="description">
-		<p class="scroll-reveal">{{data.description}}</p>
+		{{#with data.description}}
+			<p class="description1">{{data.description}}</p>
+		{{/with}}
 		{{#with data.description2}}
-			<p class="scroll-reveal">{{data.description2}}</p>
+			<p class="description2">{{data.description2}}</p>
 		{{/with}}
 	</div>
 
@@ -40,7 +64,10 @@
 
 	<div class="hero-gallery">
 		{{#with data.prototype}}
-			<iframe class="prototype" src="{{data.prototype}}" height="650" frameborder="0" scrolling="no"></iframe>
+			<iframe class="prototype" src="{{data.prototype}}" frameborder="0" scrolling="no" height="650"></iframe>
+		{{/with}}
+		{{#with data.prototype2}}
+			<iframe class="prototype2" src="{{data.prototype2}}" frameborder="0" scrolling="no" width="418" height="930" style="transform: scale(0.6)"></iframe>
 		{{/with}}
 		{{#with data.projectImgs}}
 			<div class="not-masonry-grid">

@@ -1,13 +1,14 @@
 
 .project-list {
-	top: 60px;
 	width: 90%;
+	height: auto;
 	margin: 0 auto;
 	z-index: 0;
+	opacity: 1;
 }
 
 /*.grid-sizer {
-	width: 50%;
+	width: 30%;
 }*/
 
 .show-all {
@@ -21,5 +22,29 @@
 
 .show-all:hover {
 	color: #FEC52E;
+	text-decoration: line-through;
 }
 
+.show-all:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.show-all:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.gridz {
+  margin-top: 6%;
+}
+
+.col {
+  display: inline-block;
+  width: 49%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: top;
+}

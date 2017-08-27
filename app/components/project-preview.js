@@ -20,6 +20,12 @@ export default Ember.Component.extend({
 		this.set('isActiveProject', this.get('index') === this.get('activeProjectIndex'));
 	}),
 
+
+	// didInsertElement: function() {
+	// 	var hoverColor = this.get('data.hover')
+	// 	this.getElementById('hover-overlay').style.backgroundColor = 'hoverColor';
+	// },
+
 	didUpdateAttrs: function() {
 		var delay = this.get('isActiveProject') ? this.get('animationDuration') : this.get('randomIntervals')[this.get('index')];
 		var transition = 'opacity 0.6s ease ' + delay + 's';

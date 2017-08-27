@@ -1,23 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Lora|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Karla|Poppins|Source+Sans+Pro');
+ @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
- 
 .project-hero {
 	position: absolute;
-	top: 0;
+	top: 10%;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	background-color: rgba(255, 255, 255, 1);
 	opacity: 0;
+	z-index: 15;
 }
 .project-hero.show {
 	opacity: 1;
 }
 
+.show-all {
+	position: fixed;
+	top: 8vw;
+	right: 5vw;
+	z-index: 10;
+	font-family: 'Josefin Sans', sans-serif;
+	cursor: pointer;
+}
+
+.show-all:hover {
+	color: #FEC52E;
+	text-decoration: line-through;
+}
+
+.show-all:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.show-all:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
 .project-hero .hero-top {
 	top: 0;
 	width: 90vw;
+	margin: 0 auto;
 }
 
 .project-hero .hero-left {
@@ -38,10 +67,11 @@
 }
 
 .project-hero .hero-data {
-	font-family: "brandon-grotesque", sans-serif;
-	font-weight: 200;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 100;
 	text-align: left;
 	margin-top: 20%; 
+	font-size: 18px;
 }
 
 .project-hero .hero-data .line {
@@ -51,9 +81,13 @@
 	margin-top: 5%;
 }
 
-.project-hero .hero-data ul {
+.project-hero .hero-data .info-text {
 	padding: 0;
 	margin-top: 5%;
+}
+
+.project-hero .hero-data ul {
+	margin-bottom: 5%;
 }
 
 .project-hero .hero-data li {
@@ -61,6 +95,39 @@
 	white-space: nowrap;
 	text-align: left;
 	line-height: 150%;
+	font-size: 16px;
+	font-family: "brandon-grotesque", sans-serif;
+}
+
+.project-hero .hero-data p {
+	margin-bottom: 5%;
+	margin-top: 5%;
+	font-family: "brandon-grotesque", sans-serif;
+	font-size: 16px;
+}
+
+.project-hero .project-link {
+	text-decoration: none;
+}
+
+.project-hero .link-text {
+	width: 40%;
+	height: 20%;
+	border: solid 1px #000000;
+	font-family: 'brandon-grotesque', sans-serif;
+	font-size: 18px;
+	color: #000000;
+	margin-top: 15%;
+	margin-bottom: 15%;
+	padding: 3%;
+	text-align: center;
+	font-weight: 500;
+	z-index: 15;
+}
+
+.project-hero .project-link:hover .link-text {
+	background-color: #000000;
+	color: #ffffff;
 }
 
 .project-hero .hero-image {
@@ -73,20 +140,28 @@
 .project-hero .hero-body {
 	width: 90vw;
 	margin: 0 auto;
+	margin-top: 5vw;
 }
 
-.project-hero .description,
- .project-hero .description2 {
+.project-hero .description {
 	width: 60vw;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: "brandon-grotesque", sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	font-size: 18px;
 	line-height: 140%;
 	margin-bottom: 5%;
 	margin-top: 5%; 
 	text-align: left;
 }
+
+.project-hero .description2 {
+	padding-top: 5%;
+}
+
+/*.project-hero .description {
+	column-count: 2;
+}*/
 
 .project-hero .features-section {
 	width: 100%;
@@ -96,12 +171,13 @@
 .project-hero .features-section .feature-text {
 	width: 39.5%;
 	display: inline-block;
-	font-family: 'Playfair Display', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 36px;
 	line-height: 160%;
 	margin: 0;
 	padding: 0;
 	vertical-align: top;
+	margin-top: 4%;
 }
 .project-hero .features-section .feature-text li {
 	list-style: none;
@@ -125,6 +201,13 @@
 	width: 100%;
 }
 
+.project-hero .hero-gallery .prototype2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: -10%;
+}
+
 /*.project-hero .hero-gallery .grid {
 	margin: 0 auto;
 }*/
@@ -137,6 +220,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  margin-top: 10%;
 }
 
 .col {
@@ -148,14 +232,14 @@
 }
 
 .project-hero .hero-gallery .gallery-image {
-	width: 95%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5%;
 }
 
 .project-hero .hero-gallery .gallery-image img {
-	width: 100%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;

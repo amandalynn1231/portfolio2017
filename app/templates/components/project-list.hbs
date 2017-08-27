@@ -1,18 +1,25 @@
 
-{{#if viewSingle}}
+{{!-- {{#if viewSingle}}
 	<div class="show-all" {{action 'showAll'}}>&mdash; back</div>
-{{/if}}
-{{!-- <div class="show-all" {{action 'showAll'}}>
-	<div class="thin-line"></div>
-	<p {{action 'showAll'}}>back</p>
-</div> --}}
+{{/if}} --}}
 
-<div>
-	{{#each projects as |project index|}}
-	  	{{project-preview data=project index=index activeProjectIndex=activeProjectIndex animationDuration=animationDuration randomIntervals=randomIntervals action='hideOthers'}}
-	{{/each}}
-</div>
+{{!-- <div class="grid-sizer"></div> --}}
+{{#with projects}}
+	<div class="gridz">
+		<div id="project-col-1" class="col">
+			{{#each col0Projects as |project index|}}
+		  		{{project-preview data=project index=project.index activeProjectIndex=activeProjectIndex animationDuration=animationDuration randomIntervals=randomIntervals action='hideOthers'}}
+			{{/each}}
+		</div>
+
+		<div id="project-col-2" class="col">
+			{{#each col1Projects as |project index|}}
+		  		{{project-preview data=project index=project.index activeProjectIndex=activeProjectIndex animationDuration=animationDuration randomIntervals=randomIntervals action='hideOthers'}}
+		  	{{/each}}
+		</div>
+	</div>
+{{/with}}
 
 {{#if activeProject}}
-	{{project-hero data=activeProject activeProjectIndex=activeProjectIndex animationDuration=animationDuration}}
+	{{project-hero data=activeProject activeProjectIndex=activeProjectIndex animationDuration=animationDuration action='showAll'}}
 {{/if}}
