@@ -51,14 +51,16 @@
 		{{/with}}
 	</div>
 
-	<div class="features-section">
+{{!-- 	<div class="features-section">
 		<ul class="feature-text">
 			{{#each data.featureText as |feature index|}}
-				<li class="scroll-reveal">{{feature}}</li>
+				<li class="feature-link">{{feature}}</li>
 			{{/each}}
 		</ul>
-		<img class="feature-img scroll-reveal" src={{data.firstImage}}>
-	</div>
+		{{#each data.firstImage as |featurePic index|}}
+			<img class="feature-img" src={{featurePic}}>
+		{{/each}}
+	</div> --}}
 
 	<div style="clear: both;"></div>
 

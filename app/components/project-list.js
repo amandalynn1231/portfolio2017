@@ -24,7 +24,7 @@ export default Ember.Component.extend({
 			type: ['UX', 'UI'],
 			thumbnail: 'http://res.cloudinary.com/dxefmitas/image/upload/c_scale,w_3541/v1494866310/ns-mobile-app_kmzoip.jpg',
 			heroImage: 'http://res.cloudinary.com/dxefmitas/image/upload/c_crop,h_2509,w_4000/v1494866310/ns-mobile-app_kmzoip.jpg',
-			firstImage: 'http://res.cloudinary.com/dxefmitas/image/upload/v1503791701/welcome-screen_pdx9o3.png',
+			firstImage: ['http://res.cloudinary.com/dxefmitas/image/upload/v1503791701/welcome-screen_pdx9o3.png'],
 			featureText: ['wireframes', 'mockups', 'custom icons', 'interaction design', 'data visualization'],
 			projectImgs: [
 				{
@@ -83,7 +83,7 @@ export default Ember.Component.extend({
 					linkUrl: 'http://cinchprototype.netlify.com/'
 				}
 			],
-			firstImage:  'http://res.cloudinary.com/dxefmitas/image/upload/c_crop,g_center,h_1000,w_1500/v1501003323/cinch-screens-pink_gxvbum.jpg',
+			firstImage:  ['http://res.cloudinary.com/dxefmitas/image/upload/c_crop,g_center,h_1000,w_1500/v1501003323/cinch-screens-pink_gxvbum.jpg'],
 			featureText: ['user research', 'personas', 'sitemapping', 'wireframes', 'mockups', 'html/css prototype'],
 			projectImgs: [
 				{
