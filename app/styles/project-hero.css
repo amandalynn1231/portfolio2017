@@ -22,6 +22,7 @@
 	right: 5vw;
 	z-index: 10;
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 	cursor: pointer;
 }
 
@@ -146,6 +147,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "Josefin Sans", sans-serif;
+	font-weight: 300;
 	font-size: 18px;
 	line-height: 140%;
 	margin-bottom: 5%;
@@ -170,6 +172,7 @@
 	width: 39.5%;
 	display: inline-block;
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 	font-size: 36px;
 	line-height: 160%;
 	margin: 0;
