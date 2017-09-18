@@ -55,7 +55,8 @@
 }
 
 .project-hero .hero-left img {
-	width: 98%;
+	width: 95%;
+	margin-left: 2%;
 }
 
 .project-hero .hero-right {
@@ -147,7 +148,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "Josefin Sans", sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 18px;
 	line-height: 140%;
 	margin-bottom: 5%;
@@ -359,7 +360,7 @@
  	}
 
  	.project-hero .hero-gallery .prototype {
-	height: 200px;
+	height: 310px;
 	}
 }
 
