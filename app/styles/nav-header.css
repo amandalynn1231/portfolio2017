@@ -62,7 +62,7 @@ and (orientation: portrait) {
 
 	.nav-container {
 		top: 12vw;
-	    width: 50%;
+	    width: 80%;
 	    left: 50%;
 		-webkit-transform: translateX(-50%);
 		   -moz-transform: translateX(-50%);
