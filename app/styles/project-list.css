@@ -26,25 +26,78 @@
 }
 
 .show-all:hover:before {
-  background: #fff;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	background: #fff;
+  	width: 100%;
+  	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .show-all:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
+	background: transparent;
+  	width: 100%;
+  	transition: 0s;
 }
 
 .gridz {
-  margin-top: 6%;
+  	/*position: absolute;*/
+  	margin-top: 6%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.col {
-  display: inline-block;
-  width: 49%;
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: top;
+#project-col-1,
+#project-col-2 {
+  	width: 49%;
+  	vertical-align: top;
 }
+
+#project-col-1 {
+	float: left;
+}
+
+#project-col-2 {
+	float: right;
+}
+
+@media screen and (max-width: 600px)
+and (orientation: portrait) {
+	.project-list {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+
+	.gridz {
+		margin-top: 70px;
+		width: 100%;
+	}
+
+	#project-col-1,
+	#project-col-2 {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto; 
+	    vertical-align: none;
+	    float: none;
+	}
+}
+
+ @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  	.gridz {
+  		margin-top: 50px;
+  	}
+  }
+
+
+
+
+
+
+
+
+
+

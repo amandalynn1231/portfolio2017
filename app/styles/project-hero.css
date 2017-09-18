@@ -4,7 +4,7 @@
 
 .project-hero {
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	left: 0;
 	bottom: 0;
 	right: 0;
@@ -147,7 +147,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "Josefin Sans", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 140%;
 	margin-bottom: 5%;
@@ -280,5 +280,87 @@
 	margin-top: 10%;
  	float: right;
  }*/
+
+ @media screen and (max-width: 700px)
+ and (orientation: portrait) {
+
+ 	.show-all {
+		left: 5vw;
+		padding-top: 10%;
+ 	}
+
+ 	.project-hero .hero-left {
+ 		width: 100%;
+ 	}
+
+ 	.project-hero .hero-right {
+ 		float: none;
+ 		width: 100%;
+ 		/*margin-left: 5%;*/
+ 	}
+
+ 	.project-hero .hero-title {
+ 		font-size: 20px;
+ 	}
+
+ 	.project-hero .hero-data {
+ 		margin-top: 7%;
+ 	}
+
+ 	.project-hero .hero-data li {
+ 		float: left;
+ 		padding-right: 5%;
+ 		font-size: 12px;
+ 	}
+ 	
+ 	.project-hero .description {
+ 		width: 90%;
+ 		font-size: 14px;
+ 	}
+
+ 	.project-hero .hero-gallery .prototype {
+	height: 200px;
+	}
+
+ }
+
+ @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  	.project-hero .hero-title {
+ 		font-size: 20px;
+ 	}
+ 	.project-hero .hero-data {
+ 		margin-top: 7%;
+ 	}
+
+ 	.project-hero .hero-data p {
+ 		font-size: 12px;
+ 	}
+ 	.project-hero .hero-data li {
+ 		float: left;
+ 		padding-right: 5%;
+ 		font-size: 10px;
+ 	}
+
+ 	.project-hero .link-text {
+	width: 70%;
+	height: 20%;
+	font-size: 14px;
+	margin-top: 10%;
+	
+}
+ 	
+ 	.project-hero .description {
+ 		width: 80%;
+ 		font-size: 14px;
+ 	}
+
+ 	.project-hero .hero-gallery .prototype {
+	height: 200px;
+	}
+}
 
 
