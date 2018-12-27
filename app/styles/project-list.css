@@ -13,7 +13,7 @@
 
 .show-all {
 	position: fixed;
-	top: 8vw;
+	top: 15vw;
 	right: 5vw;
 	z-index: 10;
 	font-family: 'Josefin Sans', sans-serif;
@@ -39,7 +39,7 @@
 
 .gridz {
   	/*position: absolute;*/
-  	margin-top: 6%;
+  	margin-top: 22%;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -76,15 +76,15 @@ and (orientation: portrait) {
 	#project-col-2 {
 		width: 100%;
 		margin-left: auto;
-		margin-right: auto; 
+		margin-right: auto;
 	    vertical-align: none;
 	    float: none;
 	}
 }
 
- @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 700px) 
+ @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 700px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
   	.gridz {

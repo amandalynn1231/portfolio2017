@@ -10,6 +10,7 @@
 	right: 0;
 	background-color: rgba(255, 255, 255, 1);
 	opacity: 0;
+	padding-top: 5%;
 	z-index: 15;
 }
 .project-hero.show {
@@ -63,15 +64,22 @@
 	float: left;
 	display: inline-block;
 	width: 30vw;
-	padding-left: 1%; 
+	padding-left: 1%;
 }
 
 .project-hero .hero-data {
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 100;
 	text-align: left;
-	margin-top: 20%; 
+	margin-top: 20%;
 	font-size: 18px;
+}
+
+.project-hero .hero-data .hero-title {
+	font-family: 'Lora', serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 28px;
 }
 
 .project-hero .hero-data .line {
@@ -152,7 +160,7 @@
 	font-size: 18px;
 	line-height: 140%;
 	margin-bottom: 5%;
-	margin-top: 5%; 
+	margin-top: 5%;
 	text-align: left;
 }
 
@@ -313,7 +321,7 @@
  		padding-right: 5%;
  		font-size: 12px;
  	}
- 	
+
  	.project-hero .description {
  		width: 90%;
  		font-size: 14px;
@@ -325,11 +333,11 @@
 
  }
 
- @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 700px) 
+ @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 700px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
+  and (orientation: landscape) {
   	.project-hero .hero-title {
  		font-size: 20px;
  	}
@@ -351,9 +359,9 @@
 	height: 20%;
 	font-size: 14px;
 	margin-top: 10%;
-	
+
 }
- 	
+
  	.project-hero .description {
  		width: 80%;
  		font-size: 14px;

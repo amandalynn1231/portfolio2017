@@ -18,9 +18,9 @@ export default Ember.Component.extend({
 	}),
 
 	didInsertElement: function() {
-		// window.sr = ScrollReveal({ 
+		// window.sr = ScrollReveal({
 		// 	reset: true,
-		// 	vFactor: 0.60 
+		// 	vFactor: 0.60
 		// });
 
 		// sr.reveal('li');
@@ -37,7 +37,7 @@ export default Ember.Component.extend({
 
 	actions: {
 		showAll: function() {
-			this.sendAction('action')
+			this.sendAction('action');
 		}
 	}
 });

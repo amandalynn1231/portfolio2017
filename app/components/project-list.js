@@ -20,6 +20,44 @@ export default Ember.Component.extend({
 
 	rawProjects: [
 		{
+			title: 'Improv Asylum Website',
+			type: ['UX', 'UI'],
+			thumbnail: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/IA-portfolio-display_l8p4oj.jpg',
+			heroImage: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/IA-portfolio-display_l8p4oj.jpg',
+			firstImage: ['http://res.cloudinary.com/dxefmitas/image/upload/v1503791701/welcome-screen_pdx9o3.png'],
+			featureText: ['wireframes', 'mockups', 'custom gif animations', 'interaction design'],
+			projectImgs: [
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/1.Homepage_nst98r.jpg'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937495/Corporate_Training_-_Public_Speaking_Classes_Improv_Asylum_ou3vep.gif'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937495/shows-sign_zumiw0.gif',
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937511/2.ShowsCalendar_yk1c5f.jpg'
+				},
+				{
+					image:'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/3.Corporate_Training_2_h9oery.jpg'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/3.Corporate_Training_2_h9oery.jpg'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/5.Show_Details_jqgcfl.jpg'
+				}
+			],
+			description: 'Improv Asylum is a Boston based improv theatre. The company has historically been known for its fun improv shows and school for improv classes. However, in recent years the company has grown its corporate training division and in-house production services, creating commercials for companies like Dunkin Donuts and Hasbro. Improv Asylum came to the ADK Group requesting an updated website that reflected their growth and and funny, irreverant personality.',
+			description2: 'I was the lead designer on this project at ADK Group, working alongside a project manager and development team. For Improv Asylum, I conducted stakeholder/user interviews to identify current pain points and opportunities for improvement and provided design for the user experience, interface, interactions, and custom animations.',
+			// prototype: 'https://fruitloopmobile.netlify.com/',
+			hover: '#4D1BDA',
+			year: '2018'
+			// '#25D39E'
+		},
+
+		{
 			title: 'NutriSavings Mobile App',
 			type: ['UX', 'UI'],
 			thumbnail: 'http://res.cloudinary.com/dxefmitas/image/upload/c_scale,w_3541/v1494866310/ns-mobile-app_kmzoip.jpg',
@@ -36,7 +74,7 @@ export default Ember.Component.extend({
 				},
 				{
 					image: 'http://res.cloudinary.com/dxefmitas/image/upload/c_scale,w_1256/v1503805040/ipad_z9izkk.png',
-				}, 
+				},
 				{
 					image: 'http://res.cloudinary.com/dxefmitas/image/upload/c_scale,w_1074/v1500837808/profile-gif-mockup_y4fbat.gif',
 					text: "preloader animation 3"
@@ -69,7 +107,7 @@ export default Ember.Component.extend({
 			prototype: 'http://bostonskyline.netlify.com/',
 			hover: '#25D39E',
 			year: '2016'
-			// '#B36AE2' 
+			// '#B36AE2'
 		},
 
 		{
@@ -112,7 +150,7 @@ export default Ember.Component.extend({
 			year: '2016 - 2017',
 			programs: 'photoshop, illustrator, indesign',
 			heroImage: 'http://res.cloudinary.com/dxefmitas/image/upload/v1496166223/Poster-MockUp-Vert-and-Horiz_zkvhhi.jpg',
-			projectImgs: [ 
+			projectImgs: [
 				{
 					image: 'http://res.cloudinary.com/dxefmitas/image/upload/c_crop,g_north,h_660,w_600/v1496165612/no-clipping4_plf42a.gif'
 				},
@@ -137,7 +175,7 @@ export default Ember.Component.extend({
 				{
 					image: 'http://res.cloudinary.com/dxefmitas/image/upload/v1500242231/lighthouse_qabvrp.gif'
 				},
-				{ 
+				{
 					image: 'http://res.cloudinary.com/dxefmitas/image/upload/v1497039547/NS-salessheet_wzmros.jpg'
 				}
 			],
@@ -151,7 +189,7 @@ export default Ember.Component.extend({
 			title: 'Wandermore',
 			type: ['UX', 'UI', 'mobile app'],
 			thumbnail: 'http://res.cloudinary.com/dxefmitas/image/upload/v1493910727/wandermore_screens_exyslj.png',
-			heroImage: 'http://res.cloudinary.com/dxefmitas/image/upload/v1493910727/wandermore_screens_exyslj.png',			
+			heroImage: 'http://res.cloudinary.com/dxefmitas/image/upload/v1493910727/wandermore_screens_exyslj.png',
 			firstImage: 'http://res.cloudinary.com/dxefmitas/image/upload/v1502637878/wandermore-mocks_mtajgh.png',
 			featureText: ['wireframes', 'mockups', 'custom font', 'prototype'],
 			projectLink: [
@@ -189,9 +227,9 @@ export default Ember.Component.extend({
 	setRandomIntervals: function () {
 		var orderedIntervals = [];
 		var randomIntervals = [];
-		var projectsLength = this.get('projects.length')
+		var projectsLength = this.get('projects.length');
 		var interval = this.get('animationDuration') / projectsLength;
-		
+
 		for (var i = 0; i < projectsLength; i++) {
 			orderedIntervals.push(i * interval);
 		}
@@ -233,14 +271,14 @@ export default Ember.Component.extend({
 				if (col0Height <= col1Height) {
 					col0.push(project);
 					col0Height += inverseAspectRatio;
-				} 
+				}
 				else {
 					col1.push(project);
 					col1Height += inverseAspectRatio;
 				}
 
 				getNextImage(index + 1);
-			}
+			};
 			img.src = project.thumbnail;
 		}
 
@@ -260,6 +298,6 @@ export default Ember.Component.extend({
 			this.set('activeProject', null);
 		}
 
-	} 
+	}
 });
 

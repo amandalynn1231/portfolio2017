@@ -28,13 +28,13 @@
 
 .preview-inner-wrapper {
 	position: relative;
-	transition: transform 0.3s ease;    
+	transition: transform 0.3s ease;
 	transform-origin: center;
 	box-shadow: none;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	z-index: 10; 
+	z-index: 10;
 }
 
 .project-preview:hover .preview-inner-wrapper {
@@ -42,7 +42,7 @@
 }
 
 .project-list.view-single .project-preview.is-active-project:hover .preview-inner-wrapper {
-     box-shadow: 1px 1px 10px #E2E2E2;  
+     box-shadow: 1px 1px 10px #E2E2E2;
 }
 
 .project-list .hover-overlay {
@@ -67,12 +67,12 @@
 }
 
 .project-preview:hover .hover-overlay {
-	opacity: 0.5;
+	opacity: 0.75;
 }
 
 .project-list.view-single .project-preview.is-active-project:hover .hover-overlay {
 	opacity: 0;
-}	
+}
 
 .text-wrapper {
 	position: absolute;
@@ -88,14 +88,13 @@
 }
 
 .text-wrapper .preview-title {
-	font-family: "Josefin Sans", sans-serif;
+	font-family: 'Lora', serif;
 	font-weight: 900;
 	font-style: italic;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	opacity: 0;
 	line-height: 120%;
-}	
+}
 
 .text-wrapper .preview-description {
 	font-family: 'brandon-grotesque', sans-serif;
@@ -118,7 +117,7 @@
 	width: 100%;
 	height: 100%;
 	box-shadow: none;
-	opacity: 0.9;
+	opacity: 1;
 }
 
 /*.project-preview:hover .thumbnail {
