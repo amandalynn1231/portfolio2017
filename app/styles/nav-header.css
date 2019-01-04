@@ -6,6 +6,8 @@
 	position: fixed;
 	padding: 20px;
 	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 90vw;
 	z-index: 20;
 }
@@ -18,7 +20,7 @@
 .nav-container {
 	position: fixed;
 	padding-top: 2px;
-	right: 5%;
+	right: 5vw;
 }
 
 .nav-item {
@@ -50,8 +52,8 @@
 	font-family: 'Lora', serif;
 	font-style: italic;
 	font-weight: 900;
-	font-size: 36px;
-	margin-left: 50px;
+	font-size: 2.2rem;
+	margin-left: 5vw;
 	padding: 2rem 0;
 	width: 50%;
 	line-height: 150%;
@@ -62,24 +64,26 @@
 and (orientation: portrait) {
 	.header-title {
 		width: 15%;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
+		/*left: 50%;*/
+		/*transform: translateX(-50%);*/
 	}
 
 	.nav-container {
-		top: 12vw;
+		top: 15vw;
 	    width: 80%;
-	    left: 50%;
-		-webkit-transform: translateX(-50%);
-		   -moz-transform: translateX(-50%);
-		     -o-transform: translateX(-50%);
-		        transform: translateX(-50%);
+	    right: 10%;
 	}
 
 	.nav-item {
 		text-align: center;
 		font-size: 16px;
+		float: right;
+	}
+
+	.intro-copy {
+		width: 90%;
+		top: 18vw;
+		font-size: 1.5rem;
 	}
 }
 
