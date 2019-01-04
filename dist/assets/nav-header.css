@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+.nav {
+	position: fixed;
+	padding: 20px;
+	top: 0;
+	width: 90vw;
+	z-index: 20;
+}
+
+.header-title {
+	position: fixed;
+	width: 8vw;
+}
+
+.nav-container {
+	position: fixed;
+	padding-top: 2px;
+	right: 5%;
+}
+
+.nav-item {
+	float: left;
+	text-align: right;
+	color: #000000; /*#FFCD05*/
+ 	padding-left: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	/*text-shadow: 2px 1px 8px #f8f8f8;*/
+	/*width: 20px;*/
+	/*max-height: 30px;*/
+	text-decoration: none;
+	z-index: 20;
+	overflow: visible;
+	/*text-transform: uppercase;*/
+}
+
+.nav-item:hover {
+	color: #4D1BDA;
+	/*opacity: 0.5;*/
+	text-decoration: line-through;
+}
+
+.intro-copy {
+	position: absolute;
+	top: 8vw;
+	font-family: 'Lora', serif;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 36px;
+	margin-left: 50px;
+	padding: 2rem 0;
+	width: 50%;
+	line-height: 150%;
+}
+
+
+@media screen and (max-width: 700px)
+and (orientation: portrait) {
+	.header-title {
+		width: 15%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.nav-container {
+		top: 12vw;
+	    width: 80%;
+	    left: 50%;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+
+	.nav-item {
+		text-align: center;
+		font-size: 16px;
+	}
+}
+
+ @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  	.header-title {
+  		width: 15%;
+		top: 5%;
+		padding-top: 2px;
+	}
+
+  	.nav-container {
+		right: 5%;
+		top: 5%;
+	}
+
+	.nav-item {
+		text-align: right;
+		font-size: 16px;
+	}
+
+}
+
+
+
+
+
+
+
