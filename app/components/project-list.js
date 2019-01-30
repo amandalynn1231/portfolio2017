@@ -22,10 +22,16 @@ export default Ember.Component.extend({
 		{
 			title: 'Improv Asylum Website',
 			type: ['UX', 'UI'],
-			thumbnail: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/IA-portfolio-display_l8p4oj.jpg',
+			thumbnail: 'https://res.cloudinary.com/dxefmitas/image/upload/v1546890681/thumb_hl3rrk.jpg',
 			heroImage: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/IA-portfolio-display_l8p4oj.jpg',
 			firstImage: ['http://res.cloudinary.com/dxefmitas/image/upload/v1503791701/welcome-screen_pdx9o3.png'],
 			featureText: ['wireframes', 'mockups', 'custom gif animations', 'interaction design'],
+			projectLink: [
+				{
+					linkText: 'View Site',
+					linkUrl: 'https://www.improvasylum.com/'
+				}
+			],
 			projectImgs: [
 				{
 					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937513/1.Homepage_nst98r.jpg'
@@ -34,7 +40,7 @@ export default Ember.Component.extend({
 					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937495/Corporate_Training_-_Public_Speaking_Classes_Improv_Asylum_ou3vep.gif'
 				},
 				{
-					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937495/shows-sign_zumiw0.gif',
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548730987/shows-sign-animation_s7qmuh.gif',
 				},
 				{
 					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1545937511/2.ShowsCalendar_yk1c5f.jpg'
@@ -53,6 +59,47 @@ export default Ember.Component.extend({
 			description2: 'I was the lead designer on this project at ADK Group, working alongside a project manager and development team. For Improv Asylum, I conducted stakeholder/user interviews to identify current pain points and opportunities for improvement and provided design for the user experience, interface, interactions, and custom animations.',
 			// prototype: 'https://fruitloopmobile.netlify.com/',
 			hover: '#4D1BDA',
+			year: '2018'
+			// '#25D39E'
+		},
+
+		{
+			title: 'Bar Lyon Website',
+			type: ['UX', 'UI', 'Front End Development'],
+			thumbnail: 'https://res.cloudinary.com/dxefmitas/image/upload/v1546874687/bar-lyon-thumb_eubzsw.jpg',
+			heroImage: 'https://res.cloudinary.com/dxefmitas/image/upload/v1547133046/bar-lyon-animation_b8c4he.gif',
+			firstImage: ['https://res.cloudinary.com/dxefmitas/image/upload/v1547133046/bar-lyon-animation_b8c4he.gif'],
+			featureText: ['ui design', 'interaction design', 'animations', 'front-end development'],
+			fullImg: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548862678/home-fork-wide_oxqi9n.png',
+			projectImgs: [
+				{
+					image:'https://res.cloudinary.com/dxefmitas/image/upload/v1548735383/home-mockup_cqtpzg.jpg'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548738944/Home_page_h4jg7l.png'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548858538/logo-pig_lrpsag.png'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548738954/About_hadcxv.png'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548738944/Menu_2_jcizbt.png',
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548862671/title-treatments_lxsznp.png'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548734015/Contact_exnche.png'
+				},
+				{
+					image: 'https://res.cloudinary.com/dxefmitas/image/upload/v1548737543/Bar_Lyon_A_CHG_Restaurant_lccujj.jpg'
+				}
+			],
+			description: 'Bar Lyon is a new restaurant located in Bostons South End neighborhood featuring French cuisine inspired by Lyon, France. The restuarant is a modern take on the Lyonaise bouchon restaurant, in which the emphasis is on simple cuisine and a cozy atmosphere.',
+			description2: 'Taking inspiration from Lyonaise bouchons, I stylized the titles of each page with elements that channeled the look and feel of signs and decor in bochons. Animation was added to the logo and its surrounding elements to reflect the modernity of the restaurant. The split screen layout allows the restaurant to emphasize their high quality photography of the atmosphere and food. I provided visual design and build the front end of this website as custom wordpress templates for the client.',
+			hover: '#0A3629',
 			year: '2018'
 			// '#25D39E'
 		},
@@ -113,8 +160,8 @@ export default Ember.Component.extend({
 		{
 			title: 'Cinch Mobile Prototype',
 			type: ['UX', 'UI', 'Front End'],
-			heroImage: 'http://res.cloudinary.com/dxefmitas/image/upload/v1493910718/cinchMobileMock_ou7spd.png',
-			thumbnail: 'http://res.cloudinary.com/dxefmitas/image/upload/v1493910718/cinchMobileMock_ou7spd.png',
+			heroImage: 'https://res.cloudinary.com/dxefmitas/image/upload/v1546882658/cinchMobileMock_a3siml.png',
+			thumbnail: 'https://res.cloudinary.com/dxefmitas/image/upload/v1546882658/cinchMobileMock_a3siml.png',
 			projectLink: [
 				{
 					linkText: 'View Prototype',
