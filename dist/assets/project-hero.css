@@ -8,7 +8,8 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+	/*background-color: rgba(255, 255, 255, 1);*/
+	background-color: #FEF6EE;
 	opacity: 0;
 	padding-top: 5%;
 	z-index: 15;
@@ -28,7 +29,7 @@
 }
 
 .show-all:hover {
-	color: #FEC52E;
+	color: #4D1BDA;
 	text-decoration: line-through;
 }
 
@@ -216,6 +217,10 @@
 	margin-right: auto;
 	width: 100%;
 	margin-top: -10%;
+}
+
+.project-hero .hero-gallery .fullImg {
+	width: 100%;
 }
 
 /*.project-hero .hero-gallery .grid {

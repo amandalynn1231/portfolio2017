@@ -18,7 +18,7 @@
 }
 
 .show-all:hover {
-	color: #FEC52E;
+	color: #4D1BDA;
 	text-decoration: line-through;
 }
 
@@ -34,6 +34,6 @@
   transition: 0s;
 }
 
-/*html {
-	background-color: #F7F3E9;
-}*/
+html {
+	background-color: #FEF6EE;
+}
